@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#4FC3F7</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="logo">#0D0C0C</color>
+    <color name="textEditColor">#11475E</color>
+    <color name="girisYap">#115C9A</color>
+    <color name="sosyalMedya">#0FA8EC</color>
+    <color name="icon">#fff</color>
+    <color name="kayitOL">#fff</color>
+    <color name="kayitOLText">#2699FB</color>
+    <color name="kayitOlKAyitOl">#fff</color>
+    <color name="arkaPlan">#E3E0E0</color>
+    <color name="divider">#540D0C0C</color>
+
+
+
+    <item name="imagesGiris" type="drawable">@drawable/shape_light</item>
+</resources>

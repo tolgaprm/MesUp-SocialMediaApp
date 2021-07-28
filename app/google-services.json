@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "901438553080",
+    "project_id": "mesup-751f2",
+    "storage_bucket": "mesup-751f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901438553080:android:91584a9e4e937952d9f40d",
+        "android_client_info": {
+          "package_name": "com.tolgapirim.mesup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901438553080-du2el1qu6qlng7v1298j7e6i9go402gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdR-oLMFtkJ-fjPdchnr9sZBDXxOYnUYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901438553080-du2el1qu6qlng7v1298j7e6i9go402gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

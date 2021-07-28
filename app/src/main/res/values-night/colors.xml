@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="logo">#fff</color>
+    <color name="purple_500">#202020</color>
+    <color name="textEditColor">#00FF2B</color>
+    <color name="girisYap">#0EB62A</color>
+    <color name="sosyalMedya">#04E429</color>
+    <color name="icon">#000</color>
+    <color name="kayitOL">#04E429</color>
+    <color name="kayitOLText">#000</color>
+    <color name="kayitOlKAyitOl">#000</color>
+    <color name="arkaPlan">#333333</color>
+    <color name="divider">#A6FFFFFF</color>
+
+    <item name="imagesGiris" type="drawable">@drawable/shape_dark</item>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/postListFragment">
+    <fragment
+        android:id="@+id/postListFragment"
+        android:name="com.tolgapirim.mesup.fragman.PostListFragment"
+        android:label="fragment_post_list"
+        tools:layout="@layout/fragment_post_list" >
+        <action
+            android:id="@+id/action_postListFragment_to_postEkleFragment"
+            app:destination="@id/postEkleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postEkleFragment"
+        android:name="com.tolgapirim.mesup.fragman.PostEkleFragment"
+        android:label="fragment_post_ekle"
+        tools:layout="@layout/fragment_post_ekle" >
+        <action
+            android:id="@+id/action_postEkleFragment_to_postListFragment"
+            app:destination="@id/postListFragment" />
+        <action
+            android:id="@+id/action_postEkleFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.tolgapirim.mesup.fragman.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_profilFragment_to_postListFragment"
+            app:destination="@id/postListFragment" />
+        <action
+            android:id="@+id/action_profilFragment_to_postEkleFragment"
+            app:destination="@id/postEkleFragment" />
+        <action
+            android:id="@+id/action_profilFragment_to_profilDuzenleFragment"
+            app:destination="@id/profilDuzenleFragment"
+            app:enterAnim="@anim/slide_in_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilDuzenleFragment"
+        android:name="com.tolgapirim.mesup.fragman.ProfilDuzenleFragment"
+        android:label="fragment_profil_duzenle"
+        tools:layout="@layout/fragment_profil_duzenle" >
+        <action
+            android:id="@+id/action_profilDuzenleFragment_to_profilFragment"
+            app:destination="@id/profilFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+</navigation>

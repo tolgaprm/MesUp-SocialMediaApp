@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".fragman.ProfilDuzenleFragment">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilDuzenleProfil_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profilResmiDegistir"
+        android:layout_width="389dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="@string/profil_resmini_degistir"
+        android:onClick="profilResmiKaydet"
+        android:textColor="#0FA8EC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/profilDuzenleKullaniciAdi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilDuzenleProfil_image"
+         />
+
+
+    <EditText
+        android:id="@+id/profilDuzenleKullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/text_edit_design"
+        android:hint="@string/kullaniciAdi"
+        android:paddingStart="15dp"
+        android:text=""
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilDuzenleProfil_image" />
+
+    <EditText
+        android:id="@+id/profilDuzenleBiyografi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/text_edit_design"
+        android:hint="@string/Biyografi"
+        android:minHeight="45dp"
+        android:paddingStart="15dp"
+        android:visibility="gone"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilDuzenleProfil_image" />
+
+    <Button
+        android:id="@+id/iptalBtn"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/girisYap"
+        android:padding="10dp"
+        app:cornerRadius="50dp"
+        android:onClick="iptal"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <Button
+        android:id="@+id/guncelleBtn"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/girisYap"
+        android:padding="10dp"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/ic_baseline_done_24"
+        app:iconSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <ProgressBar
+        android:id="@+id/profilDuzenleProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
