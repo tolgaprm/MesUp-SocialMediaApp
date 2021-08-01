@@ -9,7 +9,7 @@ import com.bumptech.glide.GlideContext
 import com.bumptech.glide.request.RequestOptions
 
 fun ImageView.gorselIndir(url:String?, placeholder: CircularProgressDrawable){
-    val options = RequestOptions().placeholder(placeholder).error(R.drawable.ic_baseline_account_circle_24)
+    val options = RequestOptions().placeholder(placeholder)
     Glide.with(context).setDefaultRequestOptions(options).load(url).into(this)
 }
 
